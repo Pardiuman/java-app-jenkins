@@ -1,5 +1,6 @@
 backend:
   name: flask
+  image: pardiuman/newfile
   replicas: 2
   label: flask-deploy
   imagepullpolicy: IfNotPresent
