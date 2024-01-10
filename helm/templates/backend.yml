@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: flask
-        image: pardiuman/appres{{ if eq .Values.production "dev" }}-dev{{ end }}
+        #image: pardiuman/appres{{ if eq .Values.production "dev" }}-dev{{ end }}
+        image: {{ .Values.backend.image }}
         imagePullPolicy: {{ .Values.backend.imagepullpolicy }}
         resources:
           requests:
