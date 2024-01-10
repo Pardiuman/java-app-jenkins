@@ -1,6 +1,6 @@
 backend:
   name: flask
-  image: pardiuman/newfile
+  image: pardiuman/java-app-jenkins:47
   replicas: 2
   label: flask-deploy
   imagepullpolicy: IfNotPresent
